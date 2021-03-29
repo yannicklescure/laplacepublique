@@ -1,0 +1,14 @@
+// Graphical variables
+@import "config/index";
+
+// External libraries
+@import '~bootstrap';
+@import '~bootstrap-vue';
+
+body {
+  padding-top: calc(56px + 2.5em);
+}
+
+.navbar-brand {
+  font-family: 'Kiwi Maru', serif;
+}

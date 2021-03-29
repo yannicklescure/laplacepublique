@@ -14,7 +14,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/stylesheet/index.scss'
+    '~/assets/stylesheet/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -33,7 +33,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: 'G-HD6KTDWFXY'
+    id: 'UA-193183837-1'
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,9 +51,11 @@ export default {
   ],
 
   googleFonts: {
+    download: true,
     families: {
       Roboto: true,
       'Josefin+Sans': true,
+      'Kiwi+Maru': true,
       Lato: [100, 300],
       Raleway: {
         wght: [100, 400],
