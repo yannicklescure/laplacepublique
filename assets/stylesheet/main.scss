@@ -2,8 +2,8 @@
 @import "config/index";
 
 // External libraries
-@import '~bootstrap';
-@import '~bootstrap-vue';
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
 
 body {
   padding-top: calc(56px + 2.5em);
