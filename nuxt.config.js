@@ -30,7 +30,12 @@ export default {
     '@nuxtjs/eslint-module',
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
+    '@aceforth/nuxt-optimized-images',
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   googleAnalytics: {
     id: 'UA-193183837-1'
