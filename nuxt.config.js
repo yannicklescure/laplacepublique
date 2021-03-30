@@ -53,7 +53,13 @@ export default {
     '@nuxtjs/markdownit',
     // https://google-fonts.nuxtjs.org/setup
     '@nuxtjs/google-fonts',
+    // https://nuxtjs.org/blog/creating-blog-with-nuxt-content/
+    '@nuxt/content',
   ],
+
+  content: {
+    nestedProperties: ['author.name']
+  },
 
   googleFonts: {
     // download: true,
