@@ -1,6 +1,6 @@
 <template>
-  <div class="fixed-top">
-    <div class="navbar navbar-dark bg-dark">
+  <div class="">
+    <div class="navbar navbar-dark bg-dark fixed-top">
       <NuxtLink to="/" class="navbar-brand">
         La Place Publique
       </NuxtLink>

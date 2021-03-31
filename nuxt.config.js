@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'laplacepublique',
@@ -19,7 +20,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/is-mobile.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,6 +32,8 @@ export default {
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
     '@aceforth/nuxt-optimized-images',
+    // https://github.com/nuxt-community/device-module
+    '@nuxtjs/device',
   ],
 
   optimizedImages: {

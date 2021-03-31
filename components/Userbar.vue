@@ -1,5 +1,5 @@
 <template>
-  <div :class="['text-secondary d-flex', $isMobile ? 'flex-column' : 'justify-content-between align-items-center']">
+  <div :class="['text-secondary d-flex', $device.isMobile ? 'flex-column' : 'justify-content-between align-items-center']">
     <div class="my-2">
       <a
         :href="`https://t.me/${ article.author.telegram }`"
@@ -15,7 +15,7 @@
         <span>{{ article.author.name }}</span>
       </a>
     </div>
-    <div v-if="$isMobile" class="d-flex justify-content-between">
+    <div v-if="$device.isMobile" class="d-flex justify-content-between">
       <span>{{ formatDate(article.updatedAt) }}</span>
       <div class="mr-3">
         <ReadingTime :content="article" />

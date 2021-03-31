@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CardMobile v-if="$isMobile" :article="article" />
+    <CardMobile v-if="$device.isMobile" :article="article" />
     <CardDesktop v-else :article="article" />
   </div>
 </template>

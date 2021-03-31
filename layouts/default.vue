@@ -1,7 +1,6 @@
 <template>
   <div>
-    <NavbarMobile v-if="$isMobile" />
-    <NavbarDesktop v-else />
+    <Navbar />
     <div class="container">
       <Nuxt />
     </div>

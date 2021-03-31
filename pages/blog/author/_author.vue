@@ -3,12 +3,12 @@
     <div class="mb-3">
       <span class="h1">{{ articles[0].author.name }}</span>
     </div>
-    <div :class="['d-flex mb-3', { 'flex-column': $isMobile }]">
+    <div :class="['d-flex mb-3', { 'flex-column': $device.isMobile }]">
       <img
         :src="require(`~/assets/images/${ articles[0].author.image }`)"
         height="128"
         width="128"
-        :class="['rounded', $isMobile ? 'mb-3' : 'mr-3']"
+        :class="['rounded', $device.isMobile ? 'mb-3' : 'mr-3']"
       >
       <p>{{ articles[0].author.bio }}</p>
     </div>
