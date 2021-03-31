@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex justify-content-between align-items-center text-secondary">
+  <div :class="['text-secondary d-flex', $isMobile ? 'flex-column' : 'justify-content-between align-items-center']">
     <div class="my-2">
       <a
         :href="`https://t.me/${ article.author.telegram }`"
         target="_blank"
-        class="d-flex align-items-center text-secondary text-decoration-none"
+        class="d-flex align-items-center text-body text-decoration-none"
       >
         <img
           :src="require(`~/assets/images/${ article.author.image }`)"
@@ -15,7 +15,13 @@
         <span>{{ article.author.name }}</span>
       </a>
     </div>
-    <div>{{ formatDate(article.updatedAt) }} &bullet; <reading-time :content="article"></reading-time></div>
+    <div v-if="$isMobile" class="d-flex justify-content-between">
+      <span>{{ formatDate(article.updatedAt) }}</span>
+      <div class="mr-3">
+        <ReadingTime :content="article" />
+      </div>
+    </div>
+    <span v-else>{{ formatDate(article.updatedAt) }} &bullet; <ReadingTime :content="article" /></span>
   </div>
 </template>
 

@@ -1,8 +1,20 @@
 <template>
   <div>
-    <h1>Author: {{ articles[0].author.name }}</h1>
-    <p>Bio: {{ articles[0].author.bio }}</p>
-    <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>
+    <div class="mb-3">
+      <span class="h1">{{ articles[0].author.name }}</span>
+    </div>
+    <div :class="['d-flex mb-3', { 'flex-column': $isMobile }]">
+      <img
+        :src="require(`~/assets/images/${ articles[0].author.image }`)"
+        height="128"
+        width="128"
+        :class="['rounded', $isMobile ? 'mb-3' : 'mr-3']"
+      >
+      <p>{{ articles[0].author.bio }}</p>
+    </div>
+    <div class="mb-3">
+      <span class="h3">Articles publiés</span>
+    </div>
     <div v-if="articles">
       <div v-for="article in articles" :key="article.slug">
         <CardDesktop v-if="article" :article="article" />

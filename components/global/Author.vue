@@ -1,28 +1,32 @@
 <template>
   <div>
-    <NuxtLink :to="`/blog/author/${ author.name }`" class="text-body text-decoration-none">
-      <h4>Auteur</h4>
-      <div class="d-flex align-items-center my-2">
-        <img
-          :src="require(`~/assets/images/${ author.image }`)"
-          height="24"
-          width="24"
-          class="rounded-circle mr-2"
-        >
-        <span>{{ author.name }}</span>
-      </div>
-      <p>{{ author.bio }}</p>
-    </NuxtLink>
+    <h4>À propos de l'auteur</h4>
+    <div class="carte p-3">
+      <NuxtLink :to="`/blog/author/${ author.name }`" class="text-body text-decoration-none">
+        <div class="d-flex">
+          <img
+            :src="require(`~/assets/images/${ author.image }`)"
+            height="96"
+            width="96"
+            class="rounded mr-3"
+          >
+          <div class="d-flex flex-column">
+            <span class="text-body">{{ author.name }}</span>
+            <span class="text-secondary">{{ author.bio }}</span>
+          </div>
+        </div>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    props: {
-      author: {
-        type: Object,
-        required: true
-      }
+export default {
+  props: {
+    author: {
+      type: Object,
+      required: true
     }
   }
+}
 </script>
