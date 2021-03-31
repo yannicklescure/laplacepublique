@@ -15,13 +15,13 @@
         <span>{{ article.author.name }}</span>
       </a>
     </div>
-    <div v-if="$device.isMobile" class="d-flex justify-content-between">
+    <div v-show="$device.isMobile" class="d-flex justify-content-between">
       <span>{{ formatDate(article.updatedAt) }}</span>
       <div class="mr-3">
         <ReadingTime :content="article" />
       </div>
     </div>
-    <span v-if="$device.isDesktop">{{ formatDate(article.updatedAt) }} &bullet; <ReadingTime :content="article" /></span>
+    <span v-show="$device.isDesktop">{{ formatDate(article.updatedAt) }} &bullet; <ReadingTime :content="article" /></span>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <CardMobile v-if="$device.isMobile" :article="article" />
-    <CardDesktop v-if="$device.isDesktop" :article="article" />
+    <CardMobile v-show="$device.isMobile" :article="article" />
+    <CardDesktop v-show="$device.isDesktop" :article="article" />
   </div>
 </template>
 
