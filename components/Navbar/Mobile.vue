@@ -1,12 +1,15 @@
 <template>
-  <div>
-    <div class="navbar navbar-dark bg-dark fixed-top">
+  <div class="fixed-top">
+    <div class="navbar navbar-dark bg-dark">
       <NuxtLink to="/" class="navbar-brand">
         La Place Publique
       </NuxtLink>
-      <span class="material-icons text-light">
-        menu
-      </span>
+      <div class="text-light" @click="displayMenu">
+        <span class="material-icons">{{ icon }}</span>
+      </div>
+    </div>
+    <div v-if="show" class="d-flex bg-light vh-100">
+      toto
     </div>
   </div>
 </template>
@@ -15,7 +18,18 @@
 export default {
   data () {
     return {
+      icon: 'menu',
       show: false
+    }
+  },
+  methods: {
+    displayMenu () {
+      if (this.show) {
+        this.icon = 'menu'
+      } else {
+        this.icon = 'close'
+      }
+      this.show = !this.show
     }
   }
 }

@@ -17,7 +17,7 @@
     </div>
     <div v-if="articles">
       <div v-for="article in articles" :key="article.slug">
-        <CardDesktop v-if="article" :article="article" />
+        <Card :article="article" />
       </div>
     </div>
   </div>

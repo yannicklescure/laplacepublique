@@ -5,8 +5,7 @@
     </div>
     <div v-if="articles">
       <div v-for="article in articles" :key="article.slug">
-        <CardMobile v-if="$isMobile" :article="article" />
-        <CardDesktop v-else :article="article" />
+        <Card :article="article" />
       </div>
     </div>
   </div>
