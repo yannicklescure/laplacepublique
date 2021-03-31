@@ -1,7 +1,7 @@
 <template>
-  <div v-click-outside="toggle" class="fixed-top">
+  <div class="fixed-top">
     <div class="navbar navbar-dark bg-dark">
-      <NuxtLink to="/" class="navbar-brand">
+      <NuxtLink to="/" class="navbar-brand" @click.stop.native="hide">
         La Place Publique
       </NuxtLink>
       <div class="text-light" @click="toggle">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div v-if="show" class="d-flex flex-column bg-light vh-100 p-3 lead">
-      <NuxtLink to="/blog" class="text-body mb-3">
+      <NuxtLink to="/blog" class="text-body mb-3" @click.stop.native="toggle">
         Blog
       </NuxtLink>
     </div>
@@ -37,6 +37,10 @@ export default {
         this.icon = 'close'
       }
       this.show = !this.show
+    },
+    hide () {
+      this.icon = 'menu'
+      this.show = false
     }
   }
 }
