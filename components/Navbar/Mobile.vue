@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <div class="navbar navbar-dark bg-dark fixed-top">
+  <div class="fixed-top">
+    <div class="navbar navbar-dark bg-dark">
       <NuxtLink to="/" class="navbar-brand">
         La Place Publique
       </NuxtLink>
@@ -8,8 +8,13 @@
         <span class="material-icons">{{ icon }}</span>
       </div>
     </div>
-    <div v-if="show" class="d-flex bg-light vh-100">
-      toto
+    <div v-if="show" class="d-flex flex-column bg-light vh-100 p-3 lead">
+      <NuxtLink to="/blog" class="text-body mb-3">
+        Blog
+      </NuxtLink>
+      <NuxtLink to="/blog" class="text-body mb-3">
+        Blog
+      </NuxtLink>
     </div>
   </div>
 </template>
