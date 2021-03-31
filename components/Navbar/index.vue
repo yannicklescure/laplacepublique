@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavbarMobile v-if="$device.isMobile" />
-    <NavbarDesktop v-else />
+    <NavbarMobile v-show="$device.isMobile" />
+    <NavbarDesktop v-show="$device.isDesktop" />
   </div>
 </template>
