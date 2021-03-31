@@ -4,7 +4,8 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="Search Articles"
+      placeholder="Rechercher un article"
+      class="form-control"
     >
     <ul v-if="articles.length">
       <li v-for="article of articles" :key="article.slug">
