@@ -1,0 +1,16 @@
+.carte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $gray-100;
+  background-clip: border-box;
+  border: 0;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+.carte:hover {
+  background-color: $gray-200;
+}

@@ -1,6 +1,13 @@
 <template>
   <div id="cards" ref="cards">
-    <AppSearchInput />
+    <div class="h1 mb-3">
+      Articles de blog
+    </div>
+    <div v-if="articles">
+      <div v-for="article in articles" :key="article.slug">
+        <CardDesktop v-if="article" :article="article" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -8,7 +15,7 @@
 export default {
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'image', 'slug', 'author'])
+      // .only(['title', 'description', 'image', 'slug', 'author'])
       .sortBy('createdAt', 'asc')
       .fetch()
 

@@ -1,0 +1,12 @@
+.nav-link {
+  color: $gray-100;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: $gray-300;
+}
+
+.nav-link.nuxt-link-active {
+  font-weight: 700;
+}
