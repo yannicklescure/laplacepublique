@@ -1,24 +1,26 @@
 <template>
   <div ref="card" class="carte mb-3">
-    <NuxtLink :to="`/blog/${ article.slug }`" class="text-decoration-none text-body">
-      <div class="d-flex flex-column">
-        <div class="mb-3">
-          <img
-            :src="require(`~/assets/images/${ article.image }`)"
-            width="100%"
-            height="100%"
-            class="rounded"
-          >
-        </div>
-        <div class="d-flex flex-column justify-content-between">
-          <div>
-            <h2>{{ article.title }}</h2>
-            <p>{{ article.description }}</p>
+    <client-only>
+      <NuxtLink :to="`/blog/${ article.slug }`" class="text-decoration-none text-body">
+        <div class="d-flex flex-column">
+          <div class="mb-3">
+            <img
+              :src="require(`~/assets/images/${ article.image }`)"
+              width="100%"
+              height="100%"
+              class="rounded"
+            >
           </div>
-          <Userbar :article="article" />
+          <div class="d-flex flex-column justify-content-between">
+            <div>
+              <h2>{{ article.title }}</h2>
+              <p>{{ article.description }}</p>
+            </div>
+            <Userbar :article="article" />
+          </div>
         </div>
-      </div>
-    </NuxtLink>
+      </NuxtLink>
+    </client-only>
   </div>
 </template>
 
