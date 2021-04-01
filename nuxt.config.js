@@ -3,6 +3,10 @@ export default {
   head: {
     title: 'La Place Publique',
     titleTemplate: 'La Place Publique | %s',
+    htmlAttrs: {
+      lang: 'fr',
+      // amp: true
+    },
     meta: [
       { charset: 'utf-8' },
       {
@@ -86,6 +90,7 @@ export default {
     ],
     // canonical
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         hid: 'canonical',
         rel: 'canonical',
