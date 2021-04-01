@@ -46,11 +46,11 @@ export default {
 
       // Open Graph
       // Test on: https://developers.facebook.com/tools/debug/
-      // {
-      //   hid: 'fb:app_id',
-      //   property: 'fb:app_id',
-      //   content: '570259036897585'
-      // },
+      {
+        hid: 'fb:app_id',
+        property: 'fb:app_id',
+        content: '224876442707056'
+      },
       { hid: 'og:site_name', property: 'og:site_name', content: 'LaPlacePublique' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
