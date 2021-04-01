@@ -45,7 +45,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+        content: 'https://www.laplacepublique.org/la_place_publique_open_graph.jpg'
       },
 
       // Open Graph
@@ -75,12 +75,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+        content: 'https://www.laplacepublique.org/la_place_publique_open_graph.jpg'
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+        content: 'https://www.laplacepublique.org/la_place_publique_open_graph.jpg'
       },
       {
         hid: 'og:image:alt',
