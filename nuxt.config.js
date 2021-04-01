@@ -144,6 +144,8 @@ export default {
     '@nuxtjs/google-fonts',
     // https://nuxtjs.org/blog/creating-blog-with-nuxt-content/
     '@nuxt/content',
+    // https://sitemap.nuxtjs.org/guide/setup
+    '@nuxtjs/sitemap'
   ],
 
   content: {
