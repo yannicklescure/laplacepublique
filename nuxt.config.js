@@ -1,14 +1,96 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'laplacepublique',
+    title: 'La Place Publique',
+    titleTemplate: 'La Place Publique | %s',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Ensemble pour la France.'
+      },
+
+      // Twitter
+      // Test on: https://cards-dev.twitter.com/validator
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@yanniclescure' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://www.laplacepublique.org'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'La Place Publique'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Ensemble pour la France.'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+      },
+
+      // Open Graph
+      // Test on: https://developers.facebook.com/tools/debug/
+      // {
+      //   hid: 'fb:app_id',
+      //   property: 'fb:app_id',
+      //   content: '570259036897585'
+      // },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'LaPlacePublique' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.laplacepublique.org'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'La Place Publique'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Ensemble pour la France.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://www.laplacepublique.org/la_place_publique_web_1200.jpg'
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'LaPlacePublique'
+      }
     ],
+    // canonical
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: `https://www.laplacepublique.org`
+      }
     ]
   },
 
