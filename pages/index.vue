@@ -1,6 +1,6 @@
 <template>
   <div id="cards" ref="cards">
-    <AppSearchInput />
+    En construction
   </div>
 </template>
 
