@@ -1,10 +1,10 @@
 <template>
   <div class="fixed-top">
-    <div class="navbar navbar-dark bg-dark">
+    <div :class="['navbar', show ? 'navbar-light bg-light' : 'navbar-dark bg-dark']">
       <NuxtLink to="/" class="navbar-brand" @click.stop.native="hide">
         La Place Publique
       </NuxtLink>
-      <div class="text-light" @click="toggle">
+      <div :class="show ? 'text-body' : 'text-light'" @click="toggle">
         <span class="material-icons">{{ icon }}</span>
       </div>
     </div>
