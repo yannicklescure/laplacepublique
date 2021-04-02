@@ -148,6 +148,12 @@ export default {
     '@nuxtjs/sitemap'
   ],
 
+  sitemap: {
+    // options
+    path: '/sitemapindex.xml',
+    hostname: 'https://www.laplacepublique.org',
+  },
+
   content: {
     nestedProperties: ['author.name']
   },
@@ -179,7 +185,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'fr'
     }
   },
 
