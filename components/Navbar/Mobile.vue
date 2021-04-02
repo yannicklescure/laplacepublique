@@ -8,11 +8,13 @@
         <span class="material-icons">{{ icon }}</span>
       </div>
     </div>
-    <div v-if="show" class="d-flex flex-column bg-light vh-100 p-3 lead">
-      <NuxtLink to="/blog" class="text-body mb-3" @click.stop.native="toggle">
-        Blog
-      </NuxtLink>
-    </div>
+    <transition name="fade">
+      <div v-if="show" class="d-flex flex-column bg-light vh-100 p-3 lead">
+        <NuxtLink to="/blog" class="text-body mb-3" @click.stop.native="toggle">
+          Blog
+        </NuxtLink>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -45,3 +47,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
