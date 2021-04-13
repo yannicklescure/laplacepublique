@@ -51,6 +51,11 @@ export default {
       }
     }
   },
+  head () {
+    return {
+      title: this.article.title
+    }
+  },
   mounted () {
     this.$nextTick(() => {
       this.matchInfoBox()

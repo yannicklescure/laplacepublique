@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'La Place Publique',
+    title: 'Ensemble pour la France.',
     titleTemplate: 'La Place Publique | %s',
     htmlAttrs: {
       lang: 'fr',

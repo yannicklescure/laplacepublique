@@ -4,9 +4,14 @@
       <NuxtLink to="/" class="navbar-brand">
         La Place Publique
       </NuxtLink>
-      <NuxtLink class="nav-item nav-link" to="/blog">
-        Blog
-      </NuxtLink>
+      <div class="d-flex">
+        <NuxtLink class="nav-item nav-link" to="/blog">
+          Blog
+        </NuxtLink>
+        <NuxtLink class="nav-item nav-link" to="/about">
+          Qui suis-je ?
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

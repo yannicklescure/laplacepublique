@@ -10,8 +10,11 @@
     </div>
     <transition name="fade">
       <div v-if="show" class="d-flex flex-column bg-light vh-100 p-3 lead">
-        <NuxtLink to="/blog" class="text-body mb-3" @click.stop.native="toggle">
+        <NuxtLink to="/blog" class="text-body text-decoration-none mb-3" @click.stop.native="toggle">
           Blog
+        </NuxtLink>
+        <NuxtLink to="/about" class="text-body text-decoration-none mb-3" @click.stop.native="toggle">
+          Qui suis-je ?
         </NuxtLink>
       </div>
     </transition>
