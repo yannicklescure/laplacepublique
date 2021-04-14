@@ -127,7 +127,8 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'UA-193183837-1'
+    // id: 'UA-193183837-1'
+    id: 'G-HD6KTDWFXY'
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
