@@ -1,6 +1,6 @@
 <template>
   <div id="cards" ref="cards">
-    En construction
+    <Banner />
   </div>
 </template>
 
