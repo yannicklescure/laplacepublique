@@ -10,9 +10,9 @@
 export default {
   data () {
     return {
-      period: 1000,
+      period: 2000,
       position: 0,
-      toRotate: ['La place publique.', 'Pour une discussion ouverte.', 'Parce que nos dirigeants veulent une révolution populaire.', 'Organisons-nous !'],
+      toRotate: ['La place publique.', 'Une discussion ouverte.', 'Car nos dirigeants ont trahi le peuple.', 'Une révolution populaire est en marche.', 'Organisons-nous !'],
       loopNum: 0,
       txt: '',
       isDeleting: false,
