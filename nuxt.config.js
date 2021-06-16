@@ -120,7 +120,21 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
+    // https://github.com/nuxt-community/fontawesome-module
+    ['@nuxtjs/fontawesome', {
+        icons: {
+          solid: ['faCog'],
+          brands: ['faTelegram', 'faTelegramPlane']
+        }
+      }
+    ]
   ],
+
+  // fontawesome: {
+  //   icons: {
+  //     brands: ['faTelegram', 'faTelegramPlane']
+  //   }
+  // },
 
   optimizedImages: {
     optimizeImages: true

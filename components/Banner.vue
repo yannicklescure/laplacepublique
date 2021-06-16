@@ -1,8 +1,14 @@
 <template>
   <div>
-    <h1>
-      <span ref="wrap">&nbsp;</span>
-    </h1>
+    <div class="text-center my-5">
+      <div class="h1">
+        Rejoignez-nous dès maintenant
+      </div>
+      <ButtonTelegram :type="'btn-lg'" :color="'dark'" />
+    </div>
+    <div class="h2">
+      <span ref="wrap">> {{ message }}</span>
+    </div>
   </div>
 </template>
 
@@ -10,9 +16,10 @@
 export default {
   data () {
     return {
+      message: '',
       period: 2000,
       position: 0,
-      toRotate: ['La place publique.', 'Une discussion ouverte.', 'Car nos dirigeants ont trahi le peuple.', 'Une révolution populaire est en marche.', 'Organisons-nous !'],
+      toRotate: ['La place publique.', 'Une discussion ouverte.', 'Nos dirigeants ont trahi le peuple.', 'Une révolution populaire est en marche.', 'Organisons-nous !'],
       loopNum: 0,
       txt: '',
       isDeleting: false,
@@ -38,8 +45,12 @@ export default {
         this.txt = this.fullTxt.substring(0, this.txt.length + 1)
       }
 
-      this.$refs.wrap.innerHTML = this.txt
-      this.$refs.wrap.style.borderRight = '0.08em solid #000'
+      if (this.$refs.wrap) {
+        // this.$refs.wrap.innerHTML = this.txt
+        this.message = this.txt
+        this.$refs.wrap.style.borderRight = '0.08em solid #000'
+        this.$refs.wrap.style.animation = 'blink .5s step-end infinite alternate'
+      }
 
       if (this.isDeleting) { this.delta /= 2 }
 
@@ -60,3 +71,7 @@ export default {
   }
 }
 </script>
+
+<style>
+  @keyframes blink { 50% { border-color: #fff }  }
+</style>

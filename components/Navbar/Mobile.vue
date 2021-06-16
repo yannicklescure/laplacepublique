@@ -14,7 +14,7 @@
           Blog
         </NuxtLink>
         <NuxtLink to="/about" class="text-body text-decoration-none mb-3" @click.stop.native="toggle">
-          Qui suis-je ?
+          À propos
         </NuxtLink>
       </div>
     </transition>

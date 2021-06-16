@@ -1,7 +1,10 @@
 <template lang="md">
   <div class="text-justify">
-    Parisien de naissance, je vis aujourd'hui au Canada. Ce pays est loin d'être mieux néanmoins
-    on peut encore sortir la nuit dans les grandes villes sans se faire agresser et
+    Français de naissance, chrétien de foi, je vis depuis 2014 au Canada. Ce pays
+    donne une très bonne vision de l'Europe de demain, ce qui est loin d'être mieux
+    sur de si nombreux plans. Le néo-libéralisme détruit toutes les cultures et
+    sépare toujours plus les riches des pauvres. Néanmoins et contrairement aux
+    grandes villes des États-Unis, on peut encore sortir la nuit sans se faire agresser et
     acheter des vitamines sans devoir présenter une autorisation de l'ordre des médecins.
     <br />
     <br />
@@ -14,9 +17,9 @@
     veuille ou non et elle partira de France.
     <br />
     <br />
-    Ce n'est donc plus une question de savoir s'il faut la faire ou non mais
-    comment ça va se faire et comment ça va se gérer. Nous nous devons de devenir
-    les acteurs de demain et d'arrêter de se laisser guider passivement vers le chaos social.
+    Ce n'est donc plus une question de savoir s'il faut faire une révolution ou non mais
+    comment elle va se faire et comment ça va se gérer. Nous devons devenir
+    les acteurs de demain et arrêter de se laisser guider passivement vers le chaos social.
     <br />
     <br />
     <a href="https://t.me/yannicklescure" target="_blank">Yannick Lescure</a>
