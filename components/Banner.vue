@@ -7,7 +7,7 @@
       <ButtonTelegram :type="'btn-lg'" :color="'dark'" />
     </div>
     <div class="h2">
-      <span ref="wrap">> {{ message }}</span>
+      <span ref="wrap">>&nbsp;{{ message }}</span>
     </div>
   </div>
 </template>
