@@ -13,11 +13,10 @@
     Il y en a marre que le peuple se laisse diriger par un petit groupe de merdeux
     capitalistes cachés derrière des forces armées. La corruption, l'argent sale, la pédophilie,
     les différences de classes sociales et j'en passe sont des problèmes à faire disparaître
-    si on veut retrouver notre liberté perdue. La révolution va se faire qu'on le
-    veuille ou non et elle partira de France.
+    si on veut retrouver notre liberté perdue.
     <br />
     <br />
-    Ce n'est donc plus une question de savoir s'il faut faire une révolution ou non mais
+    Aujourd'hui, ce n'est plus une question de savoir s'il faut faire une révolution ou non mais
     comment elle va se faire et comment ça va se gérer. Nous devons devenir
     les acteurs de demain et arrêter de se laisser guider passivement vers le chaos social.
     <br />
