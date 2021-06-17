@@ -4,7 +4,7 @@
       <div class="h1">
         Rejoignez-nous dès maintenant
       </div>
-      <ButtonTelegram :type="'btn-lg'" :color="'dark'" />
+      <ButtonTelegram :type="'btn-lg'" :color="'dark'" class="mt-5" />
     </div>
     <div class="h2">
       <span ref="wrap">>&nbsp;{{ message }}</span>
