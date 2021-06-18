@@ -4,9 +4,9 @@
       <div class="h1">
         Rejoignez-nous dès maintenant
       </div>
-      <ButtonTelegram :type="'btn-lg'" :color="'dark'" class="mt-5" />
+      <ButtonTelegram :type="'btn-lg'" :color="'success'" class="mt-5" />
     </div>
-    <div class="h2">
+    <div class="h4">
       <span ref="wrap">>&nbsp;{{ message }}</span>
     </div>
   </div>

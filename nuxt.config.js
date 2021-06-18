@@ -117,24 +117,33 @@ export default {
     '@nuxtjs/eslint-module',
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
+    // https://google-fonts.nuxtjs.org/setup
+    '@nuxtjs/google-fonts',
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
     // https://github.com/nuxt-community/fontawesome-module
-    ['@nuxtjs/fontawesome', {
-        icons: {
-          solid: ['faCog'],
-          brands: ['faTelegram', 'faTelegramPlane']
-        }
-      }
-    ]
+    '@nuxtjs/fontawesome',
   ],
 
-  // fontawesome: {
-  //   icons: {
-  //     brands: ['faTelegram', 'faTelegramPlane']
-  //   }
-  // },
+  googleFonts: {
+    download: true,
+    families: {
+      Roboto: true,
+      Lato: true,
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faCog'],
+      brands: ['faTelegram', 'faTelegramPlane']
+    }
+  },
 
   optimizedImages: {
     optimizeImages: true
