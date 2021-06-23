@@ -1,6 +1,6 @@
 ---
 title: La Révolution ou la Mort
-description: Learning how to use @nuxt/content to create a blog
+description: Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens.
 image: article0001.jpg
 ogImage: opengraph0001.jpg
 alt: la revolution ou la mort
