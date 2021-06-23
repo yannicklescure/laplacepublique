@@ -118,7 +118,7 @@ export default {
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
     // https://google-fonts.nuxtjs.org/setup
-    '@nuxtjs/google-fonts',
+    // '@nuxtjs/google-fonts',
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
@@ -126,17 +126,17 @@ export default {
     '@nuxtjs/fontawesome',
   ],
 
-  googleFonts: {
-    // download: true,
-    families: {
-      Roboto: true,
-      Lato: true,
-      Raleway: {
-        wght: [100, 400],
-        ital: [100]
-      },
-    }
-  },
+  // googleFonts: {
+  //   // download: true,
+  //   families: {
+  //     Roboto: true,
+  //     Lato: true,
+  //     Raleway: {
+  //       wght: [100, 400],
+  //       ital: [100]
+  //     },
+  //   }
+  // },
 
   fontawesome: {
     icons: {
