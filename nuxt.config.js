@@ -127,7 +127,7 @@ export default {
   ],
 
   googleFonts: {
-    download: true,
+    // download: true,
     families: {
       Roboto: true,
       Lato: true,
