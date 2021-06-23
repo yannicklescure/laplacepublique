@@ -119,6 +119,7 @@ export default {
     '@nuxtjs/google-analytics',
     // https://google-fonts.nuxtjs.org/setup
     '@nuxtjs/google-fonts',
+    // https://github.com/juliomrqz/nuxt-optimized-images
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
@@ -177,15 +178,6 @@ export default {
 
   content: {
     nestedProperties: ['author.name']
-  },
-
-  googleFonts: {
-    // download: true,
-    display: 'swap',
-    families: {
-      Roboto: true,
-      'Material+Icons': true
-    }
   },
 
   // [optional] markdownit options
