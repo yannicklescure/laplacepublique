@@ -1,5 +1,10 @@
 <template>
   <article ref="article">
+    <SocialHead
+      :title="article.title"
+      :description="article.description"
+      :image="article.ogImage"
+    />
     <h1>{{ article.title }}</h1>
     <Userbar :article="article" />
     <div class="d-flex flex-column align-items-end my-3">
@@ -49,11 +54,6 @@ export default {
         width: 0,
         height: 0
       }
-    }
-  },
-  head () {
-    return {
-      title: this.article.title
     }
   },
   mounted () {
