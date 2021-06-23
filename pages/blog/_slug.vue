@@ -105,6 +105,15 @@ export default {
           property: 'og:image:alt',
           content: this.article.title
         }
+      ],
+      // canonical
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://www.laplacepublique.org${this.$route.path}`
+        }
       ]
     }
   },
