@@ -1,8 +1,5 @@
 export default {
-  target: 'static',
-  generate: {
-    fallback: '404.html'
-  },
+  // target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Ensemble pour la France.',
