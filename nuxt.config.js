@@ -40,7 +40,7 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Ensemble pour la France.'
+        content: "Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens."
       },
       {
         hid: 'twitter:image',
@@ -70,7 +70,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Ensemble pour la France.'
+        content: "Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens."
       },
       {
         hid: 'og:image',
