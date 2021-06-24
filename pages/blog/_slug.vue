@@ -73,7 +73,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `~/assets/images/${this.article.ogImage}`
+          content: `~assets/images/${this.article.ogImage}`
         },
         {
           hid: 'twitter:image:alt',
@@ -93,12 +93,12 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `~/assets/images/${this.article.ogImage}`
+          content: `~assets/images/${this.article.ogImage}`
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          content: `~/assets/images/${this.article.ogImage}`
+          content: `~assets/images/${this.article.ogImage}`
         },
         {
           hid: 'og:image:alt',
