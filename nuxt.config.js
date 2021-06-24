@@ -3,6 +3,9 @@ export default {
   generate: {
     fallback: true
   },
+  router: {
+    base: '/laplacepublique/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Ensemble pour la France.',
