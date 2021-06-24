@@ -128,8 +128,8 @@ export default {
   mounted () {
     this.$nextTick(() => {
       this.matchInfoBox()
+      window.addEventListener('resize', this.matchInfoBox)
     })
-    window.addEventListener('resize', this.matchInfoBox)
   },
   methods: {
     matchInfoBox () {
