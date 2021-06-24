@@ -73,7 +73,8 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `~assets/images/${this.article.ogImage}`
+          // content: require(`~/assets/images/${this.article.ogImage}`)
+          content: this.ogImage
         },
         {
           hid: 'twitter:image:alt',
@@ -93,12 +94,14 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `~assets/images/${this.article.ogImage}`
+          // content: require(`~/assets/images/${this.article.ogImage}`)
+          content: this.ogImage
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          content: `~assets/images/${this.article.ogImage}`
+          // content: require(`~/assets/images/${this.article.ogImage}`)
+          content: this.ogImage
         },
         {
           hid: 'og:image:alt',
@@ -115,6 +118,11 @@ export default {
           href: `https://www.laplacepublique.org${this.$route.path}`
         }
       ]
+    }
+  },
+  computed: {
+    ogImage () {
+      return require(`~/assets/images/${this.article.ogImage}`)
     }
   },
   mounted () {
