@@ -1,9 +1,6 @@
 export default {
   target: 'static',
   // ssr: false,
-  generate: {
-    fallback: true
-  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Ensemble pour la France.',
@@ -179,6 +176,12 @@ export default {
     // options
     path: '/sitemapindex.xml',
     hostname: 'https://www.laplacepublique.org',
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
+    }
   },
 
   content: {
@@ -209,5 +212,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  generate: {
+    fallback: true,
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
+    }
   }
 }
