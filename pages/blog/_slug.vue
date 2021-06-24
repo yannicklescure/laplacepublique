@@ -1,8 +1,8 @@
 <template>
-  <article ref="article">
+  <article>
     <h1>{{ article.title }}</h1>
     <Userbar :article="article" />
-    <div class="d-flex flex-column align-items-end my-3">
+    <div ref="article" class="d-flex flex-column align-items-end my-3">
       <img
         :src="require(`~/assets/images/${ article.image }`)"
         :height="dimension.height"
@@ -63,7 +63,7 @@ export default {
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: `Cuisinier Rebelle | ${this.article.title}`
+          content: `La Place Publique | ${this.article.title}`
         },
         {
           hid: 'twitter:description',
@@ -73,7 +73,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `~/assets/images/${this.article.image}`
+          content: `${process.env.baseUrl}/${this.article.ogImage}`
         },
         {
           hid: 'twitter:image:alt',
@@ -93,12 +93,12 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `~/assets/images/${this.article.image}`
+          content: `${process.env.baseUrl}/${this.article.ogImage}`
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          content: `~/assets/images/${this.article.image}`
+          content: `${process.env.baseUrl}/${this.article.ogImage}`
         },
         {
           hid: 'og:image:alt',
