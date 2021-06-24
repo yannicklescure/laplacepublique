@@ -51,75 +51,75 @@ export default {
       }
     }
   },
-  head () {
-    return {
-      title: this.article.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.article.description
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: `La Place Publique | ${this.article.title}`
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: this.article.description
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
-          content: this.ogImage
-        },
-        {
-          hid: 'twitter:image:alt',
-          name: 'twitter:image:alt',
-          content: this.article.title
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: `${this.article.title}`
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.article.description
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
-          content: this.ogImage
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
-          content: this.ogImage
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.article.title
-        }
-      ],
-      // canonical
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://www.laplacepublique.org${this.$route.path}`
-        }
-      ]
-    }
-  },
+  // head () {
+  //   return {
+  //     title: this.article.title,
+  //     meta: [
+  //       {
+  //         hid: 'description',
+  //         name: 'description',
+  //         content: this.article.description
+  //       },
+  //       {
+  //         hid: 'twitter:title',
+  //         name: 'twitter:title',
+  //         content: `La Place Publique | ${this.article.title}`
+  //       },
+  //       {
+  //         hid: 'twitter:description',
+  //         name: 'twitter:description',
+  //         content: this.article.description
+  //       },
+  //       {
+  //         hid: 'twitter:image',
+  //         name: 'twitter:image',
+  //         // content: require(`~/assets/images/${this.article.ogImage}`)
+  //         content: this.ogImage
+  //       },
+  //       {
+  //         hid: 'twitter:image:alt',
+  //         name: 'twitter:image:alt',
+  //         content: this.article.title
+  //       },
+  //       {
+  //         hid: 'og:title',
+  //         property: 'og:title',
+  //         content: `${this.article.title}`
+  //       },
+  //       {
+  //         hid: 'og:description',
+  //         property: 'og:description',
+  //         content: this.article.description
+  //       },
+  //       {
+  //         hid: 'og:image',
+  //         property: 'og:image',
+  //         // content: require(`~/assets/images/${this.article.ogImage}`)
+  //         content: this.ogImage
+  //       },
+  //       {
+  //         hid: 'og:image:secure_url',
+  //         property: 'og:image:secure_url',
+  //         // content: require(`~/assets/images/${this.article.ogImage}`)
+  //         content: this.ogImage
+  //       },
+  //       {
+  //         hid: 'og:image:alt',
+  //         property: 'og:image:alt',
+  //         content: this.article.title
+  //       }
+  //     ],
+  //     // canonical
+  //     link: [
+  //       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  //       {
+  //         hid: 'canonical',
+  //         rel: 'canonical',
+  //         href: `https://www.laplacepublique.org${this.$route.path}`
+  //       }
+  //     ]
+  //   }
+  // },
   computed: {
     ogImage () {
       return require(`~/assets/images/${this.article.ogImage}`)
