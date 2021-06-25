@@ -5,7 +5,7 @@
         La Place Publique
       </NuxtLink>
       <div :class="show ? 'text-body' : 'text-light'" @click="toggle">
-        <span class="material-icons">{{ icon }}</span>
+        <font-awesome-icon :icon="['fas', icon]" class="ml-3" />
       </div>
     </div>
     <transition name="fade">
@@ -15,6 +15,9 @@
         </NuxtLink>
         <NuxtLink to="/about" class="text-body text-decoration-none mb-3" @click.stop.native="toggle">
           À propos
+        </NuxtLink>
+        <NuxtLink to="/search" class="text-body text-decoration-none mb-3" @click.stop.native="toggle">
+          Rechercher un article
         </NuxtLink>
       </div>
     </transition>
@@ -30,21 +33,21 @@ export default {
   },
   data () {
     return {
-      icon: 'menu',
+      icon: 'bars',
       show: false
     }
   },
   methods: {
     toggle () {
       if (this.show) {
-        this.icon = 'menu'
+        this.icon = 'bars'
       } else {
-        this.icon = 'close'
+        this.icon = 'times'
       }
       this.show = !this.show
     },
     hide () {
-      this.icon = 'menu'
+      this.icon = 'bars'
       this.show = false
     }
   }

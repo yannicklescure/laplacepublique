@@ -12,6 +12,9 @@
           À propos
         </NuxtLink>
         <ButtonTelegram :type="'btn-sm'" :color="'light'" class="ml-3" />
+        <NuxtLink class="nav-item nav-link" to="/search">
+          <font-awesome-icon :icon="['fas', 'search']" class="ml-3" />
+        </NuxtLink>
       </div>
     </div>
   </div>

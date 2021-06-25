@@ -66,7 +66,7 @@ export default {
         description: this.article.description,
         image: `https://www.laplacepublique.org${this.ogImage}`
       }
-    },
+    }
   },
   mounted () {
     this.$nextTick(() => {
