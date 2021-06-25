@@ -40,5 +40,9 @@ Aujourd’hui, j’appelle les Français et les Françaises qui comprennent qu�
 
 J’ai choisi d’introduire mon appel avec des faits qui vous parlent mais le problème est loin d’être nouveau. Il n’est que la continuité d’un travail destructeur engagé par des forces malfaisantes dès la Révolution Française de 1789. Depuis, plusieurs actions ont été dirigé contre le peuple, en commençant par le génocide des Chouans, puis des petits gens du peuple de France, au XVIIème siècle. En continuant avec les guerres inutiles de Napoléon un siècle plus tard. Les millions de morts sous la 3ème République lors de la Première Guerre mondiale, ceux sous  la 4ème lors de la Seconde Guerre mondiale et enfin sous la 5ème lors des guerres des colonies. Combien d’hommes sont morts pour satisfaire les besoins des marchés financiers ? Plusieurs millions sont partis sur des champs de bataille pour des fausses raisons. Encore aujourd’hui, le mensonge continue de tuer des milliers de Français qui meurent faute de recevoir des soins appropriés afin de nourrir les statistiques d’un virus créé en laboratoire.
 
-Dans des articles futurs, je traiterai des deux points d’actions pour redevenir un peuple libre. En attendant, je vous invite à vous manifester en rejoignant notre groupe sur Telegram https://t.me/laplacepublique_group.
+Dans des articles futurs, je traiterai des deux points d’actions pour redevenir un peuple libre. En attendant, je vous invite à vous manifester en rejoignant notre groupe sur Telegram.
+
+<center>
+  <a href="https://t.me/laplacepublique_group" target="_blank" class="btn btn-primary mt-2 mb-5">Rejoindre le groupe Telegram</a>
+</center>
 
