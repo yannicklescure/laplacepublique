@@ -1,5 +1,10 @@
 <template>
   <article>
+    <SocialHead
+      :title="socialMetaData.title"
+      :description="socialMetaData.description"
+      :image="socialMetaData.image"
+    />
     <h1>{{ article.title }}</h1>
     <Userbar :article="article" />
     <div ref="article" class="d-flex flex-column align-items-end my-3">
@@ -51,86 +56,17 @@ export default {
       }
     }
   },
-  head () {
-    return {
-      title: this.article.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.article.description
-        },
-        {
-          hid: 'twitter:url',
-          name: 'twitter:url',
-          content: `https://www.laplacepublique.org${this.$route.path}`
-        },
-        {
-          hid: 'twitter:title',
-          name: 'twitter:title',
-          content: `La Place Publique | ${this.article.title}`
-        },
-        {
-          hid: 'twitter:description',
-          name: 'twitter:description',
-          content: this.article.description
-        },
-        {
-          hid: 'twitter:image',
-          name: 'twitter:image',
-          content: `https://www.laplacepublique.org${this.ogImage}`
-        },
-        {
-          hid: 'twitter:image:alt',
-          name: 'twitter:image:alt',
-          content: this.article.title
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: `https://www.laplacepublique.org${this.$route.path}`
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: this.article.title
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.article.description
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: `https://www.laplacepublique.org${this.ogImage}`
-        },
-        {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: `https://www.laplacepublique.org${this.ogImage}`
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.article.title
-        }
-      ],
-      // canonical
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://www.laplacepublique.org${this.$route.path}`
-        }
-      ]
-    }
-  },
   computed: {
     ogImage () {
       return require(`~/assets/images/${this.article.ogImage}`)
-    }
+    },
+    socialMetaData () {
+      return {
+        title: this.article.title,
+        description: this.article.description,
+        image: `https://www.laplacepublique.org${this.ogImage}`
+      }
+    },
   },
   mounted () {
     this.$nextTick(() => {

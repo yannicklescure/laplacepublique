@@ -3,8 +3,8 @@ export default {
   // ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ensemble pour la France.',
-    titleTemplate: 'La Place Publique | %s',
+    title: 'Ensemble pour la France',
+    titleTemplate: '%s | La Place Publique',
     htmlAttrs: {
       lang: 'fr',
       // amp: true
