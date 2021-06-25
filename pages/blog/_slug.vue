@@ -61,6 +61,11 @@ export default {
           content: this.article.description
         },
         {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `https://www.laplacepublique.org${this.$route.path}`
+        },
+        {
           hid: 'twitter:title',
           name: 'twitter:title',
           content: `La Place Publique | ${this.article.title}`
@@ -71,24 +76,23 @@ export default {
           content: this.article.description
         },
         {
-          hid: 'twitter:url',
-          name: 'twitter:url',
-          content: `https://www.laplacepublique.org${this.$route.path}`
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: `${this.article.title}`
-        },
-        {
           hid: 'twitter:image',
           name: 'twitter:image',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
           content: `https://www.laplacepublique.org${this.ogImage}`
         },
         {
           hid: 'twitter:image:alt',
           name: 'twitter:image:alt',
+          content: this.article.title
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://www.laplacepublique.org${this.$route.path}`
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
           content: this.article.title
         },
         {
@@ -99,13 +103,11 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
           content: `https://www.laplacepublique.org${this.ogImage}`
         },
         {
           hid: 'og:image:secure_url',
           property: 'og:image:secure_url',
-          // content: require(`~/assets/images/${this.article.ogImage}`)
           content: `https://www.laplacepublique.org${this.ogImage}`
         },
         {
