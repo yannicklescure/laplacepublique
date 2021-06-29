@@ -19,14 +19,12 @@
           :href="`https://unsplash.com/@${ article.unsplash.username }?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`"
           target="_blank"
           class="text-secondary"
-        >Photo de {{ article.unsplash.name }}</a> / <a href="https://unsplash.com/s/photos/revolution?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="text-secondary">Unsplash</a>
+        >Photo de {{ article.unsplash.name }}</a> / <a :href="`https://unsplash.com/s/photos/${ article.unsplash.keyWord }?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`" target="_blank" class="text-secondary">Unsplash</a>
       </div>
     </div>
 
     <nuxt-content :document="article" />
-
     <author :author="article.author" />
-
     <prev-next :prev="prev" :next="next" />
   </article>
 </template>

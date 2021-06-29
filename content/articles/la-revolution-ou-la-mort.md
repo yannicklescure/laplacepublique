@@ -12,6 +12,7 @@ author:
 unsplash:
   name: Pierre Herman
   username: lepipotron
+  keyWord: revolution
 ---
 
 En pleine crise du masque, là où beaucoup commençaient à saturer de devoir porter un masque, j’ai pris l’initiative de me plaindre ouvertement dans l’introduction d’une de mes vidéos sur ma chaîne Youtube. Ce fut un choc de voir la réaction négative de mes abonnés et des gens de façon plus générale. Ma chaîne Youtube comporte 20% de toutes les tranches d’âge, dont 60% de femmes et le reste d’homme. C’est donc pour moi une représentation assez proche du peuple Français. Plusieurs milliers de personnes se sont désabonnées. Néanmoins, j’ai pris la décision de continuer. Il fallait répondre à ceux qui souhaitent mettre à la lumière du jour toutes les dérives du système et à ceux qui s'obstinent à ne pas comprendre ou vivent dans l'acceptation du mensonge.

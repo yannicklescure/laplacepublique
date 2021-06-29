@@ -1,21 +1,28 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between my-3">
+    <div class="h4">
+      Autres articles
+    </div>
     <NuxtLink
       v-if="prev"
       :to="{ path: prev.slug }"
-      class="text-primary font-bold hover:underline"
+      class="text-body font-weight-normal text-decoration-none"
     >
       {{ prev.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
+    <span v-else>
+      &nbsp;
+    </span>
     <NuxtLink
       v-if="next"
       :to="{ path: next.slug }"
-      class="font-bold hover:underline"
+      class="text-body font-weight-normal text-decoration-none"
     >
       {{ next.title }}
     </NuxtLink>
-    <span v-else>&nbsp;</span>
+    <span v-else>
+      &nbsp;
+    </span>
   </div>
 </template>
 
