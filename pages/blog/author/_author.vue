@@ -33,7 +33,7 @@ export default {
         }
       })
       .without('body')
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {
