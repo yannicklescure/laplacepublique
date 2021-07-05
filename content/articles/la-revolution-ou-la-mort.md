@@ -46,4 +46,3 @@ Dans des articles futurs, je traiterai des deux points d’actions pour redeveni
 <center>
   <a href="https://t.me/laplacepublique_group" target="_blank" class="btn btn-primary mt-2 mb-5">Rejoindre le groupe Telegram</a>
 </center>
-

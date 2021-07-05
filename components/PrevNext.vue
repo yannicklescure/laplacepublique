@@ -1,13 +1,13 @@
 <template>
-  <div class="flex justify-between my-3">
-    <div class="h4">
-      Autres articles
-    </div>
+  <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
     <NuxtLink
       v-if="prev"
       :to="{ path: prev.slug }"
-      class="text-body font-weight-normal text-decoration-none"
+      class="d-flex align-items-center text-body font-weight-normal text-decoration-none my-3"
     >
+      <span class="mr-3 lead">
+        <font-awesome-icon :icon="['fas', 'arrow-circle-left']" />
+      </span>
       {{ prev.title }}
     </NuxtLink>
     <span v-else>
@@ -16,9 +16,12 @@
     <NuxtLink
       v-if="next"
       :to="{ path: next.slug }"
-      class="text-body font-weight-normal text-decoration-none"
+      class="d-flex align-items-center text-body font-weight-normal text-decoration-none my-3"
     >
       {{ next.title }}
+      <span class="ml-3 lead">
+        <font-awesome-icon :icon="['fas', 'arrow-circle-right']" />
+      </span>
     </NuxtLink>
     <span v-else>
       &nbsp;

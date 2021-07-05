@@ -43,9 +43,6 @@ L’idée ici n’est pas de pointer une personne ou un groupe de personnes car 
 
 Tous les gens qui vous exposent des modèles de sociétés sans vous parler de reprendre activement le pouvoir vous font perdre votre temps. Manifestez vous sur notre groupe Telegram, nous recherchons des hommes et des femmes courageux capables de rejoindre des projets révolutionnaires.
 
-
-
 <center>
   <a href="https://t.me/laplacepublique_group" target="_blank" class="btn btn-primary mt-2 mb-5">Rejoindre le groupe Telegram</a>
 </center>
-

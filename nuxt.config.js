@@ -143,7 +143,7 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faSearch', 'faBars', 'faTimes'],
+      solid: ['faSearch', 'faBars', 'faTimes', 'faArrowCircleRight', 'faArrowCircleLeft'],
       brands: ['faTelegram', 'faTelegramPlane']
     }
   },
