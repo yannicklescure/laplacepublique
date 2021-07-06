@@ -3,9 +3,6 @@
     <div class="h1 mb-3">
       Articles de blog
     </div>
-    <div class="mb-3">
-      <AppSearchInput />
-    </div>
     <div v-if="articles">
       <div v-for="article in articles" :key="article.slug">
         <Card :article="article" />
@@ -19,7 +16,7 @@ export default {
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
       // .only(['title', 'description', 'image', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {

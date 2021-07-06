@@ -1,8 +1,13 @@
 <template>
-  <article ref="article">
+  <article>
+    <SocialHead
+      :title="socialMetaData.title"
+      :description="socialMetaData.description"
+      :image="socialMetaData.image"
+    />
     <h1>{{ article.title }}</h1>
     <Userbar :article="article" />
-    <div class="d-flex flex-column align-items-end my-3">
+    <div ref="article" class="d-flex flex-column align-items-end my-3">
       <img
         :src="require(`~/assets/images/${ article.image }`)"
         :height="dimension.height"
@@ -14,14 +19,12 @@
           :href="`https://unsplash.com/@${ article.unsplash.username }?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`"
           target="_blank"
           class="text-secondary"
-        >Photo de {{ article.unsplash.name }}</a> / <a href="https://unsplash.com/s/photos/revolution?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="text-secondary">Unsplash</a>
+        >Photo de {{ article.unsplash.name }}</a> / <a :href="`https://unsplash.com/s/photos/${ article.unsplash.keyWord }?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`" target="_blank" class="text-secondary">Unsplash</a>
       </div>
     </div>
 
     <nuxt-content :document="article" />
-
     <author :author="article.author" />
-
     <prev-next :prev="prev" :next="next" />
   </article>
 </template>
@@ -51,16 +54,23 @@ export default {
       }
     }
   },
-  head () {
-    return {
-      title: this.article.title
+  computed: {
+    ogImage () {
+      return require(`~/assets/images/${this.article.ogImage}`)
+    },
+    socialMetaData () {
+      return {
+        title: this.article.title,
+        description: this.article.description,
+        image: `https://www.laplacepublique.org${this.ogImage}`
+      }
     }
   },
   mounted () {
     this.$nextTick(() => {
       this.matchInfoBox()
+      window.addEventListener('resize', this.matchInfoBox)
     })
-    window.addEventListener('resize', this.matchInfoBox)
   },
   methods: {
     matchInfoBox () {

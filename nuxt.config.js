@@ -1,8 +1,10 @@
 export default {
+  // target: 'static',
+  // ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ensemble pour la France.',
-    titleTemplate: 'La Place Publique | %s',
+    title: 'Ensemble pour la France',
+    titleTemplate: '%s | La Place Publique',
     htmlAttrs: {
       lang: 'fr',
       // amp: true
@@ -40,7 +42,7 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Ensemble pour la France.'
+        content: "Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens."
       },
       {
         hid: 'twitter:image',
@@ -70,7 +72,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Ensemble pour la France.'
+        content: "Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens."
       },
       {
         hid: 'og:image',
@@ -117,10 +119,34 @@ export default {
     '@nuxtjs/eslint-module',
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
+    // https://google-fonts.nuxtjs.org/setup
+    '@nuxtjs/google-fonts',
+    // https://github.com/juliomrqz/nuxt-optimized-images
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
+    // https://github.com/nuxt-community/fontawesome-module
+    '@nuxtjs/fontawesome',
   ],
+
+  googleFonts: {
+    // download: true,
+    families: {
+      Roboto: true,
+      Lato: true,
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faSearch', 'faBars', 'faTimes', 'faArrowCircleRight', 'faArrowCircleLeft'],
+      brands: ['faTelegram', 'faTelegramPlane']
+    }
+  },
 
   optimizedImages: {
     optimizeImages: true
@@ -140,8 +166,6 @@ export default {
     '@nuxtjs/pwa',
     // https://github.com/nuxt-community/markdownit-module
     '@nuxtjs/markdownit',
-    // https://google-fonts.nuxtjs.org/setup
-    '@nuxtjs/google-fonts',
     // https://nuxtjs.org/blog/creating-blog-with-nuxt-content/
     '@nuxt/content',
     // https://sitemap.nuxtjs.org/guide/setup
@@ -152,19 +176,16 @@ export default {
     // options
     path: '/sitemapindex.xml',
     hostname: 'https://www.laplacepublique.org',
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
+    }
   },
 
   content: {
     nestedProperties: ['author.name']
-  },
-
-  googleFonts: {
-    // download: true,
-    display: 'swap',
-    families: {
-      Roboto: true,
-      'Material+Icons': true
-    }
   },
 
   // [optional] markdownit options
@@ -191,5 +212,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  generate: {
+    fallback: true,
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
+    }
   }
 }

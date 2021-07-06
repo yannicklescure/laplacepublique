@@ -5,15 +5,13 @@
       type="search"
       autocomplete="off"
       placeholder="Rechercher un article"
-      class="form-control"
+      class="form-control mb-5"
     >
-    <ul v-if="articles.length">
-      <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="`/blog/${ article.slug }`">
-          {{ article.title }}
-        </NuxtLink>
-      </li>
-    </ul>
+    <div v-if="articles">
+      <div v-for="article in articles" :key="article.slug">
+        <Card :article="article" />
+      </div>
+    </div>
   </div>
 </template>
 
