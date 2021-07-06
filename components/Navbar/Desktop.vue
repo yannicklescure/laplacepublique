@@ -6,7 +6,7 @@
       </NuxtLink>
       <div class="d-flex justify-content-center align-items-center">
         <NuxtLink class="nav-item nav-link" to="/blog">
-          Articles
+          Blog
         </NuxtLink>
         <NuxtLink class="nav-item nav-link" to="/about">
           À propos
