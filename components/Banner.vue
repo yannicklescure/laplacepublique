@@ -12,7 +12,7 @@ export default {
     return {
       period: 1000,
       position: 0,
-      toRotate: ['La place publique.', 'Pour une discussion ouverte.', 'Parce que nos dirigeants veulent une révolution populaire.', 'Organisons-nous !'],
+      toRotate: ['La place publique.', 'Pour une discussion ouverte.', 'Puisque nos dirigeants veulent une révolution populaire.', 'Organisons-nous !'],
       loopNum: 0,
       txt: '',
       isDeleting: false,

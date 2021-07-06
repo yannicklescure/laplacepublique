@@ -6,7 +6,7 @@
       </NuxtLink>
       <div class="d-flex">
         <NuxtLink class="nav-item nav-link" to="/blog">
-          Blog
+          Articles
         </NuxtLink>
         <NuxtLink class="nav-item nav-link" to="/about">
           Qui suis-je ?
