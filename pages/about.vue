@@ -5,7 +5,7 @@
     sur de si nombreux plans. Le néo-libéralisme détruit toutes les cultures et
     sépare toujours plus les riches des pauvres. Néanmoins et contrairement aux
     grandes villes des États-Unis, on peut encore sortir la nuit sans se faire agresser et
-    acheter des vitamines sans devoir présenter une autorisation de l'ordre des médecins.
+    acheter des vitamines sans devoir présenter une autorisation délivrée par l'ordre des médecins.
     <br />
     <br />
     Le jour où les Français seront prêts à prendre leur nation en main et s'occuper
