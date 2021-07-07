@@ -24,6 +24,9 @@
     </div>
 
     <nuxt-content :document="article" />
+    <div class="d-flex justify-content-center mt-4 mb-5">
+      <ButtonTelegram :type="'btn-lg'" :color="'primary'" />
+    </div>
     <author :author="article.author" />
     <prev-next :prev="prev" :next="next" />
   </article>

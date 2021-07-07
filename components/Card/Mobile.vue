@@ -16,7 +16,7 @@
               <h2>{{ article.title }}</h2>
               <p>{{ article.description }}</p>
             </div>
-            <Userbar :article="article" />
+            <!-- <Userbar :article="article" /> -->
           </div>
         </div>
       </NuxtLink>
