@@ -1,5 +1,5 @@
 <template lang="md">
-  <div class="text-justify">
+  <div class="text-justify mb-5">
     Français de naissance, chrétien de foi, je vis depuis 2014 au Canada. Ce pays
     donne une très bonne vision de l'Europe de demain, ce qui est loin d'être mieux
     sur de si nombreux plans. Le néo-libéralisme détruit toutes les cultures et

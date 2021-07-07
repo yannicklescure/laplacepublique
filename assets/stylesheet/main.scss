@@ -6,6 +6,16 @@
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
 
+html, body, #__nuxt {
+  height: 100%;
+}
+
+#__layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 body {
-  padding: calc(56px + 2.5em) 0 2.5em 0;
+  padding: calc(56px + 2.5em) 0 0 0;
 }
