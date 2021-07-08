@@ -14,7 +14,7 @@
           <a href="https://www.laplacepublique.org" class="text-muted">LaPlacePublique.org</a>
           <div class="d-flex align-items-center text-muted">
             <span class="mr-1">2021</span>
-            <font-awesome-icon :icon="['fas', 'fish']" id="fish" />
+            <font-awesome-icon id="fish" :icon="['fas', 'fish']" />
           </div>
         </div>
       </div>
