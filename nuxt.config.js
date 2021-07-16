@@ -57,7 +57,7 @@ export default {
         property: 'fb:app_id',
         content: '224876442707056'
       },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'LaPlacePublique' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'La Place Publique' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
