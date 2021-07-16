@@ -1,6 +1,6 @@
 ---
 date: "2021-07-14T12:00:00.000Z"
-title: La révolution des peuples Européens
+title: La révolte des peuples Européens
 description: Les gens commencent à se présenter. Bientôt, nous sommes plusieurs milliers regroupés sur la place publique. Sans plus tarder, nous organisons la foule car nous le savons, les forces de l’ordre vont intervenir très vite. Nous avons prévu de négocier avec elles. Après tout, ce sont des Français payés par des gens mal intentionnés; ils ne sont pas tous mauvais.
 image: article0004.jpg
 ogImage: opengraph0004.jpg
@@ -15,7 +15,7 @@ unsplash:
   username: adri1xplr
   keyWord: "gilets jaunes"
 ---
-# La révolution des peuples Européens
+# La révolte des peuples Européens
 ## 25 Avril 2022
 Il est 5h00 du matin, Paris s’éveille, comme dit la chanson. Je me tiens debout face au lion de Belfort, place Denfert-Rochereau. Une dernière prière avant de me mettre en marche vers l’Assemblée Nationale. Là-bas, je vais retrouver mes camarades et compatriotes pour commencer la Révolution. Depuis plusieurs mois, des groupes de communistes et des gens perdus manifestent dans les rues contre les réformes toujours plus dures du gouvernement. Leurs mouvements s’étouffent les uns après les autres, tous appelant à rester non violent et à s’organiser sans gouvernance. Quelle bonne blague. On voit où cela nous a mené. 85% de la population Française a été injectée par le poison et le nouveau variant epsilon venu du Brésil commence à tuer les enfants. Pourtant une grande partie de la population continue de boire les mensonges du gouvernement en place. Nous, loin des réseaux sociaux sionistes, nous nous sommes organisés depuis presque un an pour faire tomber les gouvernements d’Europe et la technocratie de l’Union Européenne. Nous sommes presque 500 000 abonnés sur notre groupe Telegram. Nous avons appelé à ce que chacun s’organise pour passer à l’action. Selon nos calculs, si 2% répondent à l’appel nous pourrons gagner le combat.
 
