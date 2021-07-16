@@ -1,4 +1,5 @@
 ---
+date: "2021-07-01T12:00:00.000Z"
 title: Les marchés financiers internationaux veulent votre sang
 description: L’argent est l’outil principal pour contrôler les masses. Le monde est ainsi fait que l’homme aujourd’hui accepte de vendre sa liberté contre du crédit qui lui permettra d’acheter des choses dont il n’a pas besoin.
 image: article0002.jpg

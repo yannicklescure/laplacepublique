@@ -16,12 +16,12 @@
       </a>
     </div>
     <div v-if="$device.isMobile" class="d-flex justify-content-between">
-      <span>{{ formatDate(article.updatedAt) }}</span>
+      <span>{{ formatDate(article.date) }}</span>
       <div class="mr-3">
         <ReadingTime :content="article" />
       </div>
     </div>
-    <span v-if="$device.isDesktop">{{ formatDate(article.updatedAt) }} &bullet; <ReadingTime :content="article" /></span>
+    <span v-if="$device.isDesktop">{{ formatDate(article.date) }} &bullet; <ReadingTime :content="article" /></span>
   </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
   },
   methods: {
     formatDate (date) {
+      console.log(date)
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('fr', options)
     }

@@ -1,4 +1,5 @@
 ---
+date: "2021-07-14T12:00:00.000Z"
 title: La révolution des peuples Européens
 description: Les gens commencent à se présenter. Bientôt, nous sommes plusieurs milliers regroupés sur la place publique. Sans plus tarder, nous organisons la foule car nous le savons, les forces de l’ordre vont intervenir très vite. Nous avons prévu de négocier avec elles. Après tout, ce sont des Français payés par des gens mal intentionnés; ils ne sont pas tous mauvais.
 image: article0004.jpg

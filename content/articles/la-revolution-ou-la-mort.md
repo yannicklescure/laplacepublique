@@ -1,4 +1,5 @@
 ---
+date: "2021-06-25T12:00:00.000Z"
 title: La Révolution ou la Mort
 description: Il est plus que temps que les hommes forts et courageux de l'Europe se réunissent pour faire disparaître l'Union Européenne, cette oligarchie des marchés financiers, et instaurer la souveraineté des peuples Européens.
 image: article0001.jpg

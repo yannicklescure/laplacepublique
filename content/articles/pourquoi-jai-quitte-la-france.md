@@ -1,4 +1,5 @@
 ---
+date: "2021-07-07T12:00:00.000Z"
 title: Pourquoi j’ai quitté la France
 description: On me demande souvent pourquoi j’ai quitté la France, le pays des droits de l’homme. Voici ma réponse.
 image: article0003.jpg
