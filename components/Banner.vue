@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="text-center my-5">
+    <div class="h4">
+      <span ref="wrap">>&nbsp;{{ message }}</span>
+    </div>
+    <div class="text-center mt-5">
       <div class="h1">
         Rejoignez-nous dès maintenant
       </div>
       <ButtonTelegram :type="'btn-lg'" :color="'success'" class="mt-5" />
-    </div>
-    <div class="h4">
-      <span ref="wrap">>&nbsp;{{ message }}</span>
     </div>
   </div>
 </template>
