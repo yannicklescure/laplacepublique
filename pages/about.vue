@@ -1,17 +1,17 @@
 <template lang="md">
   <div class="text-center">
-    <img src="/la_place_publique_web_120.jpg" />
+    <img src="/la_place_publique_web_120.jpg" height="120" width="120">
   </div>
   <div class="text-justify my-5">
     Français de naissance, chrétien de foi, je vis depuis 2014 au Canada. Ce pays
     donne une très bonne vision de l'Europe de demain, ce qui est loin d'être mieux
-    sur de si nombreux plans. Le néo-libéralisme détruit toutes les cultures et
+    sur de si nombreux plans. Le capitalisme libéral détruit toutes les cultures et
     sépare toujours plus les riches des pauvres. Néanmoins et contrairement aux
-    grandes villes des États-Unis, on peut encore sortir la nuit sans se faire agresser et
+    grandes villes des États-Unis, on peut encore y sortir la nuit sans se faire agresser et
     acheter des vitamines sans devoir présenter une autorisation délivrée par l'ordre des médecins.
     <br />
     <br />
-    Le jour où les Français seront prêts à prendre leur nation en main et s'occuper
+    Le jour où les Français seront prêts à prendre leur nation en main et à s'occuper
     de leur politique avec un peu de sérieux, alors je reviendrai en France.
     Parce que nous ne pouvons plus accèpter que le peuple se laisse diriger par un petit groupe de merdeux
     capitalistes cachés derrière des forces armées payées avec nos impôts. La corruption, l'argent sale, la pédophilie,
@@ -24,6 +24,6 @@
     les acteurs de demain et arrêter de se laisser guider passivement vers un chaos certain.
     <br />
     <br />
-    <a href="https://t.me/yannicklescure" target="_blank">Yannick Lescure</a>
+    — <a href="https://t.me/yannicklescure" target="_blank" class="text-decoration-none text-body">Yannick Lescure</a>
   </div>
 </template>
