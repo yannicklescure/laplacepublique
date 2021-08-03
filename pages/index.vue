@@ -1,5 +1,5 @@
 <template>
-  <div id="cards" ref="cards">
+  <div ref="box" class="d-flex justify-content-center align-items-center">
     <Banner />
   </div>
 </template>
@@ -32,8 +32,10 @@ export default {
   },
   methods: {
     matchInfoBox () {
-      this.dimension.width = this.$refs.cards.clientWidth
-      this.dimension.height = parseInt(this.dimension.width * 2 / 3)
+      this.dimension.width = this.$refs.box.clientWidth
+      // this.dimension.height = parseInt(this.dimension.width * 2 / 3)
+      this.dimension.height = parseInt(window.innerHeight - (2 * 56) - this.$refs.box.getBoundingClientRect().top) + 'px'
+      this.$refs.box.style.minHeight = this.dimension.height
     }
   }
 }
